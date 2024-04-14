@@ -1,0 +1,36 @@
+import { Meta, Story, Canvas, ArgTypes, Controls } from "@storybook/blocks";
+import { Box } from "@mui/material";
+
+import * as ButtonStories from "./Button.stories.js";
+import ExtendedPreview from "../../../custom/ExtendedPreview";
+
+<Meta of={ButtonStories} title="Documentation" />
+
+# Button
+
+Documentation and examples for the Button component.
+
+# Definition
+
+Button is a clickable interactive element that triggers a response.
+
+You can place text and icons inside of a button.
+
+Buttons are often used for form submissions and to toggle elements into view.
+
+## Usage
+
+The component comes in different variants such as `primary`, `secondary`, `large` and `small` which you can use to alter the look and feel of the button.
+
+## Inputs
+
+Button has the following properties:
+
+<ArgTypes of={ButtonStories} />
+
+<ExtendedPreview
+  storyId="components-button--primary"
+  sourceLink="https://github.com/Abduganeoff/Client-FoodDelivery/blob/main/components/Cart.js"
+  muiLink="https://mui.com/material-ui/api/button/"
+  exampleLink="https://codesandbox.io/p/sandbox/storybook-rhy3f4?file=%2Fsrc%2Fcomponents%2FButton%2FButton.jsx"
+/>

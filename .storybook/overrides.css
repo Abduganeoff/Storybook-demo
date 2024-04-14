@@ -1,0 +1,46 @@
+html,
+body,
+#root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#root {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Storybook docs background color */
+.css-zgt7u1 {
+  background-color: inherit !important;
+}
+
+body.dark .css-zgt7u1 {
+  background-color: #1d1d1d !important;
+}
+
+body.dark .docs-story {
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+
+/* Below are the fixes for clipped fab button for navigationDrawer 
+in Safari browser. data-open parameter used in case classNames were overwritten
+during the build process */
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  _::-webkit-full-page-media,
+  _:future,
+  :root,
+  [data-open='true'] [class*='MuiFab-root'],
+  [data-open='false'] [class*='MuiFab-root'] {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+  }
+}
