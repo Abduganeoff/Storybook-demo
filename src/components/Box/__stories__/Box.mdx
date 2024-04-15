@@ -1,0 +1,32 @@
+import { Meta, Story, Canvas, ArgTypes } from "@storybook/blocks";
+import { Typography } from "@mui/material";
+import ExtendedPreview from "../../../custom/ExtendedPreview";
+import * as BoxStories from "./Box.stories.js";
+
+<Meta title="Components/Box" of={BoxStories} />
+
+# Box
+
+Documentation and examples for the Box component.
+
+## Definition
+
+A Box is a versatile component that serves as a building block for most UI elements. It is essentially a wrapper that applies additional styling properties like padding, margin, and background color directly via props.
+
+## Usage
+
+The Box component simplifies layout and styling in applications by providing a convenient way to apply spacing, colors, and other styles directly through props without additional CSS. It supports a flexible box model layout and can be nested to create complex layouts.
+
+## Properties
+
+<ArgTypes of={BoxStories} />
+
+### Default Box
+
+The default Box demonstrates a simple usage with optional padding, margin, and background color.
+
+<ExtendedPreview
+  sourceLink="https://github.com/your-repository-link/components/Box/Box.jsx"
+  muiLink="https://mui.com/material-ui/react-box/"
+  exampleLink="https://codesandbox.io/s/new"
+/>
