@@ -10,7 +10,17 @@ import FeedbackIcon from "@mui/icons-material/Feedback";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-const ExtendedPreview = ({ storyId, sourceLink, muiLink, exampleLink }) => (
+const ExtendedPreview = ({
+  storyId,
+  example,
+  exampleLink,
+  sourceLink,
+  muiLink,
+  style,
+  codePreview: codePreviewProp = "",
+  availableCodePreview: availableCodePreviewProp,
+  ...other
+}) => (
   <Box>
     <Typography variant="h5">Preview</Typography>
     <Canvas>

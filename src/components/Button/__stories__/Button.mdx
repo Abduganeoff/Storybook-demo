@@ -1,6 +1,6 @@
 import { Meta, Story, Canvas, ArgTypes, Controls } from "@storybook/blocks";
 import { Box } from "@mui/material";
-
+import ButtonExample from "./Button.example";
 import * as ButtonStories from "./Button.stories.js";
 import ExtendedPreview from "../../../custom/ExtendedPreview";
 
@@ -29,6 +29,7 @@ Button has the following properties:
 <ArgTypes of={ButtonStories} />
 
 <ExtendedPreview
+  example={ButtonExample}
   storyId="components-button--primary"
   sourceLink="https://github.com/Abduganeoff/Client-FoodDelivery/blob/main/components/Cart.js"
   muiLink="https://mui.com/material-ui/api/button/"

@@ -1,7 +1,7 @@
 // src/components/Button/__stories__/Button.story.jsx
 import React from "react";
 import CustomButton from "../Button";
-import ExtendedPreview from "../../../custom/ExtendedPreview";
+
 
 export default {
   title: "Components/Button",
@@ -70,5 +70,3 @@ Primary.parameters = {
     ],
   },
 };
-
-

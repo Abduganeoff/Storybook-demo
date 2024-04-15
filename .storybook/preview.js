@@ -142,7 +142,7 @@
 // export default preview;
 
 import ThemeProvider from "../src/components/ThemeProvider";
-import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
+import { DocsPage, DocsContainer } from "@storybook/blocks";
 import { useDarkMode } from "storybook-dark-mode";
 import ExtendedPreview from "../src/custom/ExtendedPreview";
 import { relayrTheme, testId, enhancedPreview } from "../src/custom/decorators";
